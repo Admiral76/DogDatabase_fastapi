@@ -1,2 +1,2 @@
-# DogDatabase_fastapi
-Service for a veterinary clinic (FastApi Demo)
+# Service for a veterinary clinic (FastApi Demo)
+
