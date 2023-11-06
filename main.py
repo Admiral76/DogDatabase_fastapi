@@ -44,7 +44,7 @@ post_db = [
 
 @app.get('/', summary='Root')
 def root():
-    return 'Hello'
+    return 'Greetings, my friend!'
 
 
 @app.post('/post', response_model=Timestamp, summary='Get Post')
