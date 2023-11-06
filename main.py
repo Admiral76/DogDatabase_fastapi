@@ -57,6 +57,12 @@ def get_post():
 
 @app.get('/dog', response_model=List[Dog], summary='Get Dogs')
 def get_dogs(kind: DogType = None):
+    '''
+    Возвращает список собак в базе данных
+
+    kind: str - одна из пород собак ('terrier', 'bulldog', 'dalmatian') или все собаки (None)
+    '''
+    
     if kind:
         return [dog for dog in dogs_db.values() if dog.kind == kind]
     else:
