@@ -62,7 +62,7 @@ def get_post_post_post() -> Timestamp:
     '''
 
     new_timestamp = Timestamp(id=len(post_db), 
-                              timestamp=time())
+                              timestamp=int(time()))
     post_db.append(new_timestamp)
 
     return new_timestamp
